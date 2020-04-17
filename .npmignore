@@ -1,7 +1,5 @@
+.*
 src
 test
 scripts
-.babelrc
-.eslintrc
-circle.yml
-
+dr.pogodin-babel-plugin-css-modules-transform-*.tgz

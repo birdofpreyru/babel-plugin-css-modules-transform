@@ -5,9 +5,9 @@
  * @returns {boolean}
  */
 export default function isPlainObject(object) {
-    if (object === null || object === undefined) {
-        return false;
-    }
+  if (object === null || object === undefined) {
+    return false;
+  }
 
-    return object.toString() === '[object Object]';
+  return object.toString() === '[object Object]';
 }

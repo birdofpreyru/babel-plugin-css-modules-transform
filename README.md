@@ -1,12 +1,13 @@
-# babel-plugin-css-modules-transform [![Circle CI](https://circleci.com/gh/michalkvasnicak/babel-plugin-css-modules-transform.svg?style=svg)](https://circleci.com/gh/michalkvasnicak/babel-plugin-css-modules-transform)
+# Babel Plugin CSS Modules Transform
 
-**🎉 Babel 6 and Babel 7 compatible**
-
-**⚠️ Babel 7 compatibility added in 1.4.0**
+_A fork of
+[babel-plugin-css-modules-transform](https://www.npmjs.com/package/babel-plugin-css-modules-transform),
+upgraded to the up-to-date depenencies and standards, and with some issues
+fixed._
 
 This Babel plugin finds all `require`s for css module files and replace them with a hash where keys are class names and values are generated css class names.
 
-This plugin is based on the fantastic [css-modules-require-hook](https://github.com/css-modules/css-modules-require-hook).
+This plugin is based on the fantastic [css-modules-require-hook](https://www.npmjs.com/package/@dr.pogodin/css-modules-require-hook).
 
 ## Warning
 
@@ -41,7 +42,7 @@ console.log(styles.someClass); // prints Test__someClass___2Frqu
 ## Installation
 
 ```console
-npm install --save-dev babel-plugin-css-modules-transform
+npm install --save-dev @dr.pogodin/babel-plugin-css-modules-transform
 ```
 
 **Include plugin in `.babelrc`**
@@ -52,7 +53,7 @@ npm install --save-dev babel-plugin-css-modules-transform
 }
 ```
 
-**With custom options [css-modules-require-hook options](https://github.com/css-modules/css-modules-require-hook#tuning-options)**
+**With custom options [css-modules-require-hook options](https://www.npmjs.com/package/@dr.pogodin/css-modules-require-hook#tuning-options)**
 
 
 ```js
@@ -138,7 +139,7 @@ An more complete alternative is to use
 [babel-plugin-webpack-loaders](https://github.com/istarkov/babel-plugin-webpack-loaders)
 but be aware that a new webpack instance is run for each css file, this has a
 huge overhead. If you do not use fancy stuff, you might consider using
-[babel-plugin-css-modules-transform](https://github.com/michalkvasnicak/babel-plugin-css-modules-transform)
+[babel-plugin-css-modules-transform](https://www.npmjs.com/package/babel-plugin-css-modules-transform)
 instead.
 
 

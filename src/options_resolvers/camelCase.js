@@ -7,11 +7,11 @@ import { isBoolean } from '../utils';
  * @returns {boolean}
  */
 export default function camelCase(value/* , currentConfig */) {
-    if (!isBoolean(value) && ['dashes', 'dashesOnly', 'only'].indexOf(value) < 0) {
-        throw new Error(
-            `Configuration 'camelCase' is not a boolean or one of 'dashes'|'dashesOnly'|'only'`
-        );
-    }
+  if (!isBoolean(value) && ['dashes', 'dashesOnly', 'only'].indexOf(value) < 0) {
+    throw new Error(
+      'Configuration \'camelCase\' is not a boolean or one of \'dashes\'|\'dashesOnly\'|\'only\'',
+    );
+  }
 
-    return value;
+  return value;
 }

@@ -5,5 +5,5 @@
  * @returns {boolean}
  */
 export default function isRegExp(object) {
-    return object instanceof RegExp;
+  return object instanceof RegExp;
 }

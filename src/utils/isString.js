@@ -5,5 +5,5 @@
  * @returns {boolean}
  */
 export default function isString(object) {
-    return typeof object === 'string';
+  return typeof object === 'string';
 }

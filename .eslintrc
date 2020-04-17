@@ -1,12 +1,4 @@
 {
-  "extends": "airbnb-lite",
-  "env": {
-    "mocha": true,
-    "node": true
-  },
-  "rules": {
-    "padded-blocks": 0,
-    "comma-dangle": [2, "never"],
-    "indent": [2, 4, {"SwitchCase": 1}]
-  }
+  "extends": "airbnb",
+  "parser": "babel-eslint"
 }
