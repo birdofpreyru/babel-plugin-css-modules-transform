@@ -4,7 +4,7 @@
   "description": "Transform required css modules so one can use generated class names.",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel src --ignore **/*.spec.js -d build",
+    "build": "babel src --ignore **/*.spec.js --out-dir build",
     "lint": "eslint .",
     "mocha": "cross-env NODE_ENV=test nyc mocha",
     "test": "npm run lint && npm run mocha"
