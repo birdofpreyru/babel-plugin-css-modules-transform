@@ -8,19 +8,19 @@ import isString from './isString';
  * @returns {boolean}
  */
 export default function isModulePath(path) {
-    if (!isString(path) || path === '') {
-        return false;
-    }
+  if (!isString(path) || path === '') {
+    return false;
+  }
 
+  try {
+    require.resolve(resolvePath(process.cwd(), path));
+    return true;
+  } catch (e) {
     try {
-        require.resolve(resolvePath(process.cwd(), path));
-        return true;
-    } catch (e) {
-        try {
-            require.resolve(path);
-            return true;
-        } catch (_e) {
-            return false;
-        }
+      require.resolve(path);
+      return true;
+    } catch (_e) {
+      return false;
     }
+  }
 }

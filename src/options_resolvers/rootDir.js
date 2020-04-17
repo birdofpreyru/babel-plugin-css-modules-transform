@@ -9,13 +9,13 @@ import { isString } from '../utils';
  * @returns {String}
  */
 export default function rootDir(value/* , currentConfig */) {
-    if (!isString(value)) {
-        throw new Error(`Configuration 'rootDir' is not a string`);
-    }
+  if (!isString(value)) {
+    throw new Error('Configuration \'rootDir\' is not a string');
+  }
 
-    if (!isAbsolute(value) || !statSync(value).isDirectory()) {
-        throw new Error(`Configuration 'rootDir' is not containing a valid absolute path`);
-    }
+  if (!isAbsolute(value) || !statSync(value).isDirectory()) {
+    throw new Error('Configuration \'rootDir\' is not containing a valid absolute path');
+  }
 
-    return value;
+  return value;
 }

@@ -7,9 +7,9 @@ import { isBoolean } from '../utils';
  * @returns {boolean}
  */
 export default function devMode(value/* , currentConfig */) {
-    if (!isBoolean(value)) {
-        throw new Error(`Configuration 'devMode' is not a boolean`);
-    }
+  if (!isBoolean(value)) {
+    throw new Error('Configuration \'devMode\' is not a boolean');
+  }
 
-    return value;
+  return value;
 }

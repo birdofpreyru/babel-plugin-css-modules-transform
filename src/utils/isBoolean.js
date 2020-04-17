@@ -5,5 +5,5 @@
  * @returns {boolean}
  */
 export default function isBoolean(value) {
-    return value === true || value === false;
+  return value === true || value === false;
 }

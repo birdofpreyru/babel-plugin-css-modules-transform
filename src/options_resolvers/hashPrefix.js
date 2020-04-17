@@ -7,9 +7,9 @@ import { isString } from '../utils';
  * @returns {String}
  */
 export default function hashPrefix(value/* , currentConfig */) {
-    if (!isString(value)) {
-        throw new Error(`Configuration 'hashPrefix' is not a string`);
-    }
+  if (!isString(value)) {
+    throw new Error('Configuration \'hashPrefix\' is not a string');
+  }
 
-    return value;
+  return value;
 }

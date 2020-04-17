@@ -5,10 +5,6 @@ _A fork of
 upgraded to the up-to-date depenencies and standards, and with some issues
 fixed._
 
-**🎉 Babel 6 and Babel 7 compatible**
-
-**⚠️ Babel 7 compatibility added in 1.4.0**
-
 This Babel plugin finds all `require`s for css module files and replace them with a hash where keys are class names and values are generated css class names.
 
 This plugin is based on the fantastic [css-modules-require-hook](https://www.npmjs.com/package/@dr.pogodin/css-modules-require-hook).

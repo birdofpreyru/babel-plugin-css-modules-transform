@@ -10,11 +10,11 @@ import { appendFileSync, writeFileSync } from 'fs';
  * @param {Boolean} append
  */
 export default function writeCssFile(path, content, append = false) {
-    mkdirp.sync(dirname(path));
+  mkdirp.sync(dirname(path));
 
-    if (append) {
-        appendFileSync(path, content);
-    } else {
-        writeFileSync(path, content);
-    }
+  if (append) {
+    appendFileSync(path, content);
+  } else {
+    writeFileSync(path, content);
+  }
 }
