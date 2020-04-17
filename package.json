@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/birdofpreyru/babel-plugin-css-modules-transform/issues"
   },
-  "homepage": "https://github.com/birdofpreyru/babel-plugin-css-modules-transform#readme",
+  "homepage": "https://dr.pogodin.studio",
   "dependencies": {
     "@dr.pogodin/css-modules-require-hook": "^4.3.1",
     "mkdirp": "^1.0.4"
