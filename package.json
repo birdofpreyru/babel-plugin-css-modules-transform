@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/birdofpreyru/babel-plugin-css-modules-transform#readme",
   "dependencies": {
-    "css-modules-require-hook": "^4.0.6",
+    "@dr.pogodin/css-modules-require-hook": "^4.3.1",
+    "css-modules-require-hook": "^4.2.2",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
@@ -45,11 +46,11 @@
     "gulp-util": "^3.0.7",
     "mocha": "^3.4.2",
     "nyc": "^10.3.2",
-    "postcss": "^5.x",
-    "postcss-modules-extract-imports": "^1.0.0",
-    "postcss-modules-local-by-default": "^1.x",
-    "postcss-modules-scope": "^1.0.0",
-    "postcss-modules-values": "^1.x",
+    "postcss": "^7.0.27",
+    "postcss-modules-extract-imports": "^2.0.0",
+    "postcss-modules-local-by-default": "^3.0.2",
+    "postcss-modules-scope": "^2.2.0",
+    "postcss-modules-values": "^3.0.0",
     "rimraf": "^2.5.4"
   },
   "engines": {

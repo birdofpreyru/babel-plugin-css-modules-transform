@@ -164,7 +164,7 @@ export default function transformCssModules({ types: t }) {
             // wrap or define processCss function that collect generated css
             currentConfig.processCss = pushStylesCreator(currentConfig.processCss);
 
-            require('css-modules-require-hook')(currentConfig);
+            require('@dr.pogodin/css-modules-require-hook')(currentConfig);
 
             initialized = true;
 
