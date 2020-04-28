@@ -1,6 +1,6 @@
 {
   "name": "@dr.pogodin/babel-plugin-css-modules-transform",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Transform required css modules so one can use generated class names.",
   "main": "build/index.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-util": "^3.0.7",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "nyc": "^15.0.1",
     "postcss": "^7.0.27",
     "postcss-modules-extract-imports": "^2.0.0",
