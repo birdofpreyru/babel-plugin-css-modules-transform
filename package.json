@@ -46,7 +46,6 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "gulp-babel": "^8.0.0",
-    "gulp-util": "^3.0.7",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
     "postcss": "^7.0.27",
@@ -54,7 +53,8 @@
     "postcss-modules-local-by-default": "^3.0.2",
     "postcss-modules-scope": "^2.2.0",
     "postcss-modules-values": "^3.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "vinyl": "^2.2.0"
   },
   "engines": {
     "node": "^12.6.2"
