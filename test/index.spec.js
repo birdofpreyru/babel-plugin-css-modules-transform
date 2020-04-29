@@ -3,8 +3,8 @@ import {
   resolve, join, relative, basename, dirname,
 } from 'path';
 import { readFileSync } from 'fs';
-import gulpUtil from 'gulp-util';
 import rimraf from 'rimraf';
+import Vinyl from 'vinyl';
 
 describe('babel-plugin-css-modules-transform', () => {
   function transform(path, configuration = {}) {
@@ -95,7 +95,7 @@ describe('babel-plugin-css-modules-transform', () => {
 
     stream.on('end', cb);
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/import.js'),
@@ -199,7 +199,7 @@ describe('babel-plugin-css-modules-transform', () => {
       return cb();
     });
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/exctractcss.main.js'),
@@ -232,14 +232,14 @@ describe('babel-plugin-css-modules-transform', () => {
       return cb();
     });
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/exctractcss.main.js'),
       contents: readFileSync(join(__dirname, 'fixtures/exctractcss.main.js')),
     }));
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/exctractcss.include.js'),
@@ -265,14 +265,14 @@ describe('babel-plugin-css-modules-transform', () => {
       return cb();
     });
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/exctractcss.main.js'),
       contents: readFileSync(join(__dirname, 'fixtures/exctractcss.main.js')),
     }));
 
-    stream.write(new gulpUtil.File({
+    stream.write(new Vinyl({
       cwd: __dirname,
       base: join(__dirname, 'fixtures'),
       path: join(__dirname, 'fixtures/exctractcss.include.js'),

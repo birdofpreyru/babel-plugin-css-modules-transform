@@ -1,6 +1,6 @@
 {
   "name": "@dr.pogodin/babel-plugin-css-modules-transform",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Transform required css modules so one can use generated class names.",
   "main": "build/index.js",
   "scripts": {
@@ -24,14 +24,14 @@
   "bugs": {
     "url": "https://github.com/birdofpreyru/babel-plugin-css-modules-transform/issues"
   },
-  "homepage": "https://github.com/birdofpreyru/babel-plugin-css-modules-transform#readme",
+  "homepage": "https://dr.pogodin.studio",
   "dependencies": {
     "@dr.pogodin/css-modules-require-hook": "^4.3.1",
     "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.5",
     "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
@@ -46,15 +46,15 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "gulp-babel": "^8.0.0",
-    "gulp-util": "^3.0.7",
-    "mocha": "^7.1.1",
+    "mocha": "^7.1.2",
     "nyc": "^15.0.1",
     "postcss": "^7.0.27",
     "postcss-modules-extract-imports": "^2.0.0",
     "postcss-modules-local-by-default": "^3.0.2",
     "postcss-modules-scope": "^2.2.0",
     "postcss-modules-values": "^3.0.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "vinyl": "^2.2.0"
   },
   "engines": {
     "node": "^12.6.2"
