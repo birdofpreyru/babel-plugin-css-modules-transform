@@ -19,7 +19,6 @@ function updateStyleSheetPath(pathStringLiteral, importPathFormatter) {
   };
 }
 
-
 function findExpressionStatementChild(path, t) {
   const parent = path.parentPath;
   if (!parent) {

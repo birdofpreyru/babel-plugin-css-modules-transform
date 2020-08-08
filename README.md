@@ -1,5 +1,5 @@
 ![Master Build Status](https://img.shields.io/circleci/project/github/birdofpreyru/babel-plugin-css-modules-transform/master.svg?label=master)
-![Dev Build Status](https://img.shields.io/circleci/project/github/birdofpreyru/babel-plugin-css-modules-transform/dev.svg?label=dev)
+![Dev Build Status](https://img.shields.io/circleci/project/github/birdofpreyru/babel-plugin-css-modules-transform/devel.svg?label=devel)
 ![Latest NPM Release](https://img.shields.io/npm/v/@dr.pogodin/babel-plugin-css-modules-transform.svg)
 ![NPM Downloads](https://img.shields.io/npm/dm/@dr.pogodin/babel-plugin-css-modules-transform.svg)
 
