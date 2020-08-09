@@ -1,10 +1,10 @@
 "use strict";
 
 var css = {
-  "className": "styles__className___385m0 parent__block___33Sxl child__line___3fweh"
+  "className": "styles__className___2iI57 parent__block___2ju9C child__line___hoHxU"
 };
 var scss = {
-  "sassy": "extensions__sassy___12Yag"
+  "sassy": "extensions__sassy___2VViz"
 };
 
 var foo = require('something-that-has-css-somewhere-in-the-name');
