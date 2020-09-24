@@ -73,7 +73,7 @@ describe('babel-plugin-css-modules-transform', () => {
     expect(transform('fixtures/require.js', {
       ignore: /\.css$/,
     }).code).to.be.equal(readExpected('fixtures/require.ignored.expected.js'));
-  });
+  }, 10000);
 
   it('should not throw if we are requiring css module to module scope', () => {
     expect(() => transform('fixtures/global.require.js')).to.not.throw();
